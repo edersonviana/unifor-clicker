@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: fb496cf82c8b0fe47978e11f903649b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1220952104866851948
+    second: sprite-zelador_0
+  - first:
+      213: -7771846980260554601
+    second: sprite-zelador_1
+  - first:
+      213: 8971481678271756725
+    second: sprite-zelador_2
+  - first:
+      213: 927678292352101415
+    second: sprite-zelador_3
+  - first:
+      213: 2686452171923105871
+    second: sprite-zelador_4
+  - first:
+      213: 4702657096826393271
+    second: sprite-zelador_5
+  - first:
+      213: -7812426258244573267
+    second: sprite-zelador_6
+  - first:
+      213: 7494745366026802287
+    second: sprite-zelador_7
+  - first:
+      213: -1844556224223327754
+    second: sprite-zelador_8
+  - first:
+      213: 1209950038014722978
+    second: sprite-zelador_9
+  - first:
+      213: 7101138762454027414
+    second: sprite-zelador_10
+  - first:
+      213: -988855772252378312
+    second: sprite-zelador_11
+  - first:
+      213: 8526201087900912723
+    second: sprite-zelador_12
+  - first:
+      213: -8401194681591268202
+    second: sprite-zelador_13
+  - first:
+      213: -4164835832400113924
+    second: sprite-zelador_14
+  - first:
+      213: 816270185183535383
+    second: sprite-zelador_15
+  - first:
+      213: 7468097110189489219
+    second: sprite-zelador_16
+  - first:
+      213: -4724635636324395137
+    second: sprite-zelador_17
+  - first:
+      213: -7504098267807382441
+    second: sprite-zelador_18
+  - first:
+      213: -4596575434155135867
+    second: sprite-zelador_19
+  - first:
+      213: -8921883368748726740
+    second: sprite-zelador_20
+  - first:
+      213: -8742229524089745940
+    second: sprite-zelador_21
+  - first:
+      213: -514430357840195203
+    second: sprite-zelador_22
+  - first:
+      213: 4399355020376417519
+    second: sprite-zelador_23
+  - first:
+      213: 2391312241997094064
+    second: sprite-zelador_24
+  - first:
+      213: -5922267072863648601
+    second: sprite-zelador_25
+  - first:
+      213: 4647035787435135172
+    second: sprite-zelador_26
+  - first:
+      213: 3405137024912829251
+    second: sprite-zelador_27
+  - first:
+      213: 8433155650496742947
+    second: sprite-zelador_28
+  - first:
+      213: 8022471011703583046
+    second: sprite-zelador_29
+  - first:
+      213: 4735082777387467654
+    second: sprite-zelador_30
+  - first:
+      213: -1304410088560091958
+    second: sprite-zelador_31
+  - first:
+      213: -863595418965252745
+    second: sprite-zelador_32
+  - first:
+      213: -4872446083462134512
+    second: sprite-zelador_33
+  - first:
+      213: -3969694836049340402
+    second: sprite-zelador_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-zelador_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 248
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49355ad878e4e0fe0800000000000000
+      internalID: -1220952104866851948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 248
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79890e4395ad42490800000000000000
+      internalID: -7771846980260554601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 248
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9305ead0b118c70800000000000000
+      internalID: 8971481678271756725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 248
+        width: 56
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cec79ed76cfdc00800000000000000
+      internalID: 927678292352101415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 248
+        width: 61
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48ad855402384520800000000000000
+      internalID: 2686452171923105871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 248
+        width: 56
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b29eccb6b1334140800000000000000
+      internalID: 4702657096826393271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 248
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7e56bc5bfa49390800000000000000
+      internalID: -7812426258244573267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 248
+        width: 47
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f645808933fa20860800000000000000
+      internalID: 7494745366026802287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 248
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9ceee03e1d666e0800000000000000
+      internalID: -1844556224223327754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 248
+        width: 48
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a386d3262b9ac010800000000000000
+      internalID: 1209950038014722978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 123
+        width: 42
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c44dcb4105c8260800000000000000
+      internalID: 7101138762454027414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 123
+        width: 31
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b6dc01ae0e642f0800000000000000
+      internalID: -988855772252378312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_12
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 127
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c02e737b6235670800000000000000
+      internalID: 8526201087900912723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_13
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 127
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cf9d2d2f5f86b80800000000000000
+      internalID: -8401194681591268202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_14
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 172
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe09fd60e78336c0800000000000000
+      internalID: -4164835832400113924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_15
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 127
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7116b9c9869f35b00800000000000000
+      internalID: 816270185183535383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 127
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c37f801c204a760800000000000000
+      internalID: 7468097110189489219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_17
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 127
+        width: 80
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f779bb3cbe8be6eb0800000000000000
+      internalID: -4724635636324395137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_18
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 178
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75487b342661cd790800000000000000
+      internalID: -7504098267807382441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_19
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 127
+        width: 77
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c65ef0ffea530c0800000000000000
+      internalID: -4596575434155135867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_20
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 177
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c264446a85a1f2480800000000000000
+      internalID: -8921883368748726740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_21
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 104
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cedc2bfe09c5da680800000000000000
+      internalID: -8742229524089745940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_22
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 13
+        width: 58
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71124ba0506cd8f0800000000000000
+      internalID: -514430357840195203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_23
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 99
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe42e5e0516ad0d30800000000000000
+      internalID: 4399355020376417519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_24
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 100
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc974b70d5af2120800000000000000
+      internalID: 2391312241997094064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_25
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 101
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a448f88971efcda0800000000000000
+      internalID: -5922267072863648601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_26
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 100
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c059987d669d7040800000000000000
+      internalID: 4647035787435135172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_27
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 101
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ba57d351a714f20800000000000000
+      internalID: 3405137024912829251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_28
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 13
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326cf632266980570800000000000000
+      internalID: 8433155650496742947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_29
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 14
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641f57951ea855f60800000000000000
+      internalID: 8022471011703583046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_30
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 13
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6830040d2b466b140800000000000000
+      internalID: 4735082777387467654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_31
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 15
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc90fd7fedc5ede0800000000000000
+      internalID: -1304410088560091958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_32
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 13
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775ebeeba84e304f0800000000000000
+      internalID: -863595418965252745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_33
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 13
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0150ff73a18916cb0800000000000000
+      internalID: -4872446083462134512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-zelador_34
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 19
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e089396349fc8e8c0800000000000000
+      internalID: -3969694836049340402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite-zelador_0: -1220952104866851948
+      sprite-zelador_1: -7771846980260554601
+      sprite-zelador_10: 7101138762454027414
+      sprite-zelador_11: -988855772252378312
+      sprite-zelador_12: 8526201087900912723
+      sprite-zelador_13: -8401194681591268202
+      sprite-zelador_14: -4164835832400113924
+      sprite-zelador_15: 816270185183535383
+      sprite-zelador_16: 7468097110189489219
+      sprite-zelador_17: -4724635636324395137
+      sprite-zelador_18: -7504098267807382441
+      sprite-zelador_19: -4596575434155135867
+      sprite-zelador_2: 8971481678271756725
+      sprite-zelador_20: -8921883368748726740
+      sprite-zelador_21: -8742229524089745940
+      sprite-zelador_22: -514430357840195203
+      sprite-zelador_23: 4399355020376417519
+      sprite-zelador_24: 2391312241997094064
+      sprite-zelador_25: -5922267072863648601
+      sprite-zelador_26: 4647035787435135172
+      sprite-zelador_27: 3405137024912829251
+      sprite-zelador_28: 8433155650496742947
+      sprite-zelador_29: 8022471011703583046
+      sprite-zelador_3: 927678292352101415
+      sprite-zelador_30: 4735082777387467654
+      sprite-zelador_31: -1304410088560091958
+      sprite-zelador_32: -863595418965252745
+      sprite-zelador_33: -4872446083462134512
+      sprite-zelador_34: -3969694836049340402
+      sprite-zelador_4: 2686452171923105871
+      sprite-zelador_5: 4702657096826393271
+      sprite-zelador_6: -7812426258244573267
+      sprite-zelador_7: 7494745366026802287
+      sprite-zelador_8: -1844556224223327754
+      sprite-zelador_9: 1209950038014722978
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
