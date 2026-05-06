@@ -20,4 +20,15 @@ public class SoundEffectOnEnable : MonoBehaviour
             audioSource.PlayOneShot(soundClip);
         }
     }
+
+    void OnDisable()
+    {
+        if (soundClip != null)
+        {
+            // Toca o som na posição da câmera para garantir que seja ouvido claramente em UI
+            Vector3 position = Camera.main != null ? Camera.main.transform.position : transform.position;
+            float volume = (audioSource != null) ? audioSource.volume : 1.0f;
+            AudioSource.PlayClipAtPoint(soundClip, position, volume);
+        }
+    }
 }
