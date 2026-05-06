@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: d5b5d13b4ae211841aed944dee03aae7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8221830739960819256
+    second: sprite-reitor_0
+  - first:
+      213: 6781815871520895347
+    second: sprite-reitor_1
+  - first:
+      213: 4177380464651722235
+    second: sprite-reitor_2
+  - first:
+      213: 7992102743102312153
+    second: sprite-reitor_3
+  - first:
+      213: 8352586379639554174
+    second: sprite-reitor_4
+  - first:
+      213: -335313757187787611
+    second: sprite-reitor_5
+  - first:
+      213: 6357218665088241047
+    second: sprite-reitor_6
+  - first:
+      213: 5569436229829696765
+    second: sprite-reitor_7
+  - first:
+      213: -1810734010822015026
+    second: sprite-reitor_8
+  - first:
+      213: -7233866687777841451
+    second: sprite-reitor_9
+  - first:
+      213: 6568826947725527614
+    second: sprite-reitor_10
+  - first:
+      213: -1526567557422691767
+    second: sprite-reitor_11
+  - first:
+      213: 6383115980411779166
+    second: sprite-reitor_12
+  - first:
+      213: 7630829224917482268
+    second: sprite-reitor_13
+  - first:
+      213: -6944569782741796894
+    second: sprite-reitor_14
+  - first:
+      213: -4198375085645451164
+    second: sprite-reitor_15
+  - first:
+      213: 2755709403870473357
+    second: sprite-reitor_16
+  - first:
+      213: -5859496756138363041
+    second: sprite-reitor_17
+  - first:
+      213: -8925339790817114095
+    second: sprite-reitor_18
+  - first:
+      213: 1522522804169795544
+    second: sprite-reitor_19
+  - first:
+      213: -3471950966378516365
+    second: sprite-reitor_20
+  - first:
+      213: -3075527963359212507
+    second: sprite-reitor_21
+  - first:
+      213: -2896540174982774889
+    second: sprite-reitor_22
+  - first:
+      213: -989782978979422510
+    second: sprite-reitor_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-reitor_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 243
+        width: 48
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e60c23f7fc91270800000000000000
+      internalID: 8221830739960819256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 243
+        width: 50
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371fb128a99dd1e50800000000000000
+      internalID: 6781815871520895347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 243
+        width: 28
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdd83f566909f930800000000000000
+      internalID: 4177380464651722235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 243
+        width: 51
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dec903d917a9ee60800000000000000
+      internalID: 7992102743102312153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 243
+        width: 27
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e708e22fe095ae370800000000000000
+      internalID: 8352586379639554174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 242
+        width: 49
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a435861ae9b85bf0800000000000000
+      internalID: -335313757187787611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_6
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 241
+        width: 49
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d4114a1b0693850800000000000000
+      internalID: 6357218665088241047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_7
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 243
+        width: 50
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc903e2ebc9a4d40800000000000000
+      internalID: 5569436229829696765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 243
+        width: 44
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec74c36c20bfed6e0800000000000000
+      internalID: -1810734010822015026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_9
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 243
+        width: 53
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de587af2942c9b90800000000000000
+      internalID: -7233866687777841451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 114
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a813a4e49292b50800000000000000
+      internalID: 6568826947725527614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_11
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 114
+        width: 73
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a4f2605ea80dae0800000000000000
+      internalID: -1526567557422691767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_12
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 114
+        width: 61
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58309c3a22659850800000000000000
+      internalID: 6383115980411779166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 114
+        width: 79
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b30ec00c626e960800000000000000
+      internalID: 7630829224917482268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 114
+        width: 77
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e773c5939eef9f90800000000000000
+      internalID: -6944569782741796894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_15
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 114
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460b0428a106cb5c0800000000000000
+      internalID: -4198375085645451164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_16
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 114
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c27e93a1f3e3620800000000000000
+      internalID: 2755709403870473357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 18
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57b1d7ceb2eeaea0800000000000000
+      internalID: -5859496756138363041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 18
+        width: 82
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118cfacafb2d22480800000000000000
+      internalID: -8925339790817114095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 18
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7e8f87c66112510800000000000000
+      internalID: 1522522804169795544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_20
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 19
+        width: 77
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3703f63cdf621dfc0800000000000000
+      internalID: -3471950966378516365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_21
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 18
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c8137bc978155d0800000000000000
+      internalID: -3075527963359212507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_22
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 18
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ff080be0c6dc7d0800000000000000
+      internalID: -2896540174982774889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-reitor_23
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 18
+        width: 77
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de143def959342f0800000000000000
+      internalID: -989782978979422510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite-reitor_0: 8221830739960819256
+      sprite-reitor_1: 6781815871520895347
+      sprite-reitor_10: 6568826947725527614
+      sprite-reitor_11: -1526567557422691767
+      sprite-reitor_12: 6383115980411779166
+      sprite-reitor_13: 7630829224917482268
+      sprite-reitor_14: -6944569782741796894
+      sprite-reitor_15: -4198375085645451164
+      sprite-reitor_16: 2755709403870473357
+      sprite-reitor_17: -5859496756138363041
+      sprite-reitor_18: -8925339790817114095
+      sprite-reitor_19: 1522522804169795544
+      sprite-reitor_2: 4177380464651722235
+      sprite-reitor_20: -3471950966378516365
+      sprite-reitor_21: -3075527963359212507
+      sprite-reitor_22: -2896540174982774889
+      sprite-reitor_23: -989782978979422510
+      sprite-reitor_3: 7992102743102312153
+      sprite-reitor_4: 8352586379639554174
+      sprite-reitor_5: -335313757187787611
+      sprite-reitor_6: 6357218665088241047
+      sprite-reitor_7: 5569436229829696765
+      sprite-reitor_8: -1810734010822015026
+      sprite-reitor_9: -7233866687777841451
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
