@@ -3,7 +3,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(AudioSource))]
 public class DialogManager : MonoBehaviour 
 {
     [Header("Componentes da UI")]
@@ -18,19 +17,9 @@ public class DialogManager : MonoBehaviour
     [Header("Configurações")]
     public float velocidadeEscrita = 0.05f;
 
-    [Header("Áudio")]
-    public AudioSource audioSource;
-    public AudioClip somEscrita;
-
     private int indexArquivo = 0;
     private int indiceFala = 0;
     private bool escrevendo = false;
-
-    void Awake()
-    {
-        // Tenta pegar o AudioSource automaticamente se não for arrastado
-        if (audioSource == null) audioSource = GetComponent<AudioSource>();
-    }
 
     void Start()
     {
@@ -97,12 +86,6 @@ public class DialogManager : MonoBehaviour
         foreach (char letra in frase.ToCharArray()) 
         {
             falaUI.text += letra;
-            
-            if (audioSource != null && somEscrita != null && letra != ' ')
-            {
-                audioSource.PlayOneShot(somEscrita);
-            }
-
             yield return new WaitForSeconds(velocidadeEscrita);
         }
         escrevendo = false;
