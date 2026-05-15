@@ -5296,7 +5296,6 @@ RectTransform:
   m_Children:
   - {fileID: 871015838}
   - {fileID: 1077452159}
-  - {fileID: 1685970413}
   m_Father: {fileID: 390825077}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5509,8 +5508,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 77.06372}
-  m_SizeDelta: {x: 0.000061035, y: -462.7024}
+  m_AnchoredPosition: {x: 0, y: 62.931274}
+  m_SizeDelta: {x: -0.00012207, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284375972
 MonoBehaviour:
@@ -5532,7 +5531,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4459200086973381777, guid: 0b9acc409b110354fa2be4e45e296b86, type: 3}
+  m_Sprite: {fileID: 3472201449314129878, guid: cd1f6500907e5bb4e8584a5c563cb302, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -7714,7 +7713,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1939265385}
+      - m_Target: {fileID: 175031513}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -7726,7 +7725,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 175031513}
+      - m_Target: {fileID: 1939265385}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -9412,8 +9411,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 77.06372}
-  m_SizeDelta: {x: 0.000061035, y: -462.7024}
+  m_AnchoredPosition: {x: 0, y: 62.931244}
+  m_SizeDelta: {x: -0.00012207015, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939265387
 MonoBehaviour:
@@ -10335,8 +10334,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 77.06372}
-  m_SizeDelta: {x: 0.000061035, y: -462.7024}
+  m_AnchoredPosition: {x: -11.6359, y: 96.4422}
+  m_SizeDelta: {x: 58.0319, y: -411.8181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3786377968349081145
 MonoBehaviour:
