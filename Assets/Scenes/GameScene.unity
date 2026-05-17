@@ -1217,8 +1217,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1503920797}
   m_HandleRect: {fileID: 1503920796}
   m_Direction: 2
-  m_Value: 1.0000018
-  m_Size: 0.8833345
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2006,6 +2006,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 390825081}
+        m_TargetAssemblyTypeName: SetorManager, Assembly-CSharp
+        m_MethodName: AtivarEsteSetor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &390825079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2056,28 +2068,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9cd08af550238469df99f12123674d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetorManager
-  nomeDoSetor: Biblioteca
-  imagemCenario: {fileID: 1284375972}
-  imagemMiniaturaCard: {fileID: 390825079}
+  nomeDoSetor: Bloco T
+  imagemNormal: {fileID: 390825079}
+  imagemExpandida: {fileID: 1284375972}
   estadosSprite:
   - {fileID: 1046676396017365106, guid: 73434bb5d5450c84789c18bb50f99442, type: 3}
   - {fileID: -5967901119036081285, guid: 5c85b8e989451b945a48590e9de94fbe, type: 3}
   - {fileID: -9154277840561222583, guid: 5a0d0780d718de748a8e6b59b4d1c91a, type: 3}
-  - {fileID: -9154277840561222583, guid: 5a0d0780d718de748a8e6b59b4d1c91a, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
-  barraProgresso: {fileID: 1194281044}
-  textoProgresso: {fileID: 455164452}
-  grupoRuinas: {fileID: 1347812270}
-  grupoObras: {fileID: 0}
-  grupoConcluido: {fileID: 1505419946}
+  barraProgresso: {fileID: 1917111647}
+  textoPorcentagem: {fileID: 455164452}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
   custoVerbaN2: 5000
   reqSegurancasN2: 4
   reqEspecificoN2: 4
-  tipoExigido: 0
+  tipoExigido: 1
 --- !u!1 &397002315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,7 +5616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 415}
+  m_AnchoredPosition: {x: 0, y: 354}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970516311
@@ -7140,19 +7148,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetorManager
   nomeDoSetor: Bloco T
-  imagemCenario: {fileID: 1284375972}
-  imagemMiniaturaCard: {fileID: 390825079}
+  imagemNormal: {fileID: 0}
+  imagemExpandida: {fileID: 0}
   estadosSprite:
   - {fileID: 1046676396017365106, guid: 73434bb5d5450c84789c18bb50f99442, type: 3}
   - {fileID: -5967901119036081285, guid: 5c85b8e989451b945a48590e9de94fbe, type: 3}
   - {fileID: -9154277840561222583, guid: 5a0d0780d718de748a8e6b59b4d1c91a, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
-  barraProgresso: {fileID: 0}
-  textoProgresso: {fileID: 0}
-  grupoRuinas: {fileID: 0}
-  grupoObras: {fileID: 0}
-  grupoConcluido: {fileID: 0}
+  barraProgresso: {fileID: 1917111647}
+  textoPorcentagem: {fileID: 455164452}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -9949,6 +9954,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1671999444}
+        m_TargetAssemblyTypeName: SetorManager, Assembly-CSharp
+        m_MethodName: AtivarEsteSetor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1671999442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9999,28 +10016,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9cd08af550238469df99f12123674d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetorManager
-  nomeDoSetor: Biblioteca
-  imagemCenario: {fileID: 1939265387}
-  imagemMiniaturaCard: {fileID: 1671999442}
+  nomeDoSetor: CC
+  imagemNormal: {fileID: 1671999442}
+  imagemExpandida: {fileID: 1939265387}
   estadosSprite:
   - {fileID: -3267403684620828475, guid: 756a4f0f804d86d47acdf93e2fee6f88, type: 3}
   - {fileID: 3784925429305669045, guid: 793b585bedb64054fb925f789a4a2824, type: 3}
   - {fileID: -2934315996875454622, guid: 0d2dc2c735952dd47b2d6b969ae6e480, type: 3}
-  - {fileID: -2934315996875454622, guid: 0d2dc2c735952dd47b2d6b969ae6e480, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
-  barraProgresso: {fileID: 151364930}
-  textoProgresso: {fileID: 1818902647}
-  grupoRuinas: {fileID: 1347812270}
-  grupoObras: {fileID: 0}
-  grupoConcluido: {fileID: 1505419946}
+  barraProgresso: {fileID: 842589575}
+  textoPorcentagem: {fileID: 1818902647}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
   custoVerbaN2: 5000
   reqSegurancasN2: 4
   reqEspecificoN2: 4
-  tipoExigido: 0
+  tipoExigido: 2
 --- !u!1 &1690761918
 GameObject:
   m_ObjectHideFlags: 0
@@ -12075,20 +12088,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetorManager
   nomeDoSetor: CC
-  imagemCenario: {fileID: 1939265387}
-  imagemMiniaturaCard: {fileID: 1671999442}
+  imagemNormal: {fileID: 0}
+  imagemExpandida: {fileID: 0}
   estadosSprite:
   - {fileID: -3267403684620828475, guid: 756a4f0f804d86d47acdf93e2fee6f88, type: 3}
   - {fileID: 3784925429305669045, guid: 793b585bedb64054fb925f789a4a2824, type: 3}
   - {fileID: -2934315996875454622, guid: 0d2dc2c735952dd47b2d6b969ae6e480, type: 3}
-  - {fileID: -2934315996875454622, guid: 0d2dc2c735952dd47b2d6b969ae6e480, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
-  barraProgresso: {fileID: 0}
-  textoProgresso: {fileID: 0}
-  grupoRuinas: {fileID: 0}
-  grupoObras: {fileID: 0}
-  grupoConcluido: {fileID: 0}
+  barraProgresso: {fileID: 842589575}
+  textoPorcentagem: {fileID: 1818902647}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -13333,19 +13342,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetorManager
   nomeDoSetor: Biblioteca
-  imagemCenario: {fileID: 3786377968349081145}
-  imagemMiniaturaCard: {fileID: 3087063209924938410}
+  imagemNormal: {fileID: 0}
+  imagemExpandida: {fileID: 0}
   estadosSprite:
   - {fileID: 6164449523658773952, guid: 7d3d9c1a090577c41b6e63cd944a9b50, type: 3}
-  - {fileID: 4788964733561619047, guid: 9fe4f6d74f5936847a9db70765adbc6b, type: 3}
-  - {fileID: -4450044247956889875, guid: 852856f032547f040899fc1db5164753, type: 3}
+  - {fileID: -1033415496516165836, guid: 26dfe2f275ba9ef4285eaa1c7facba75, type: 3}
+  - {fileID: -3596379322837086861, guid: 916e04619b870d6449011978397e7998, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
-  barraProgresso: {fileID: 0}
-  textoProgresso: {fileID: 0}
-  grupoRuinas: {fileID: 1347812270}
-  grupoObras: {fileID: 1347812270}
-  grupoConcluido: {fileID: 1505419946}
+  barraProgresso: {fileID: 1598877375}
+  textoPorcentagem: {fileID: 829791890}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -13421,6 +13427,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6683241786878262642}
+        m_TargetAssemblyTypeName: SetorManager, Assembly-CSharp
+        m_MethodName: AtivarEsteSetor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &6683241786878262642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13434,19 +13452,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetorManager
   nomeDoSetor: Biblioteca
-  imagemCenario: {fileID: 3786377968349081145}
-  imagemMiniaturaCard: {fileID: 3087063209924938410}
+  imagemNormal: {fileID: 3087063209924938410}
+  imagemExpandida: {fileID: 3786377968349081145}
   estadosSprite:
   - {fileID: 6164449523658773952, guid: 7d3d9c1a090577c41b6e63cd944a9b50, type: 3}
-  - {fileID: 4788964733561619047, guid: 9fe4f6d74f5936847a9db70765adbc6b, type: 3}
+  - {fileID: -1033415496516165836, guid: 26dfe2f275ba9ef4285eaa1c7facba75, type: 3}
   - {fileID: -3596379322837086861, guid: 916e04619b870d6449011978397e7998, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
-  barraProgresso: {fileID: 1932456431}
-  textoProgresso: {fileID: 829791890}
-  grupoRuinas: {fileID: 1347812270}
-  grupoObras: {fileID: 735599493}
-  grupoConcluido: {fileID: 1505419946}
+  barraProgresso: {fileID: 1598877375}
+  textoPorcentagem: {fileID: 829791890}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
