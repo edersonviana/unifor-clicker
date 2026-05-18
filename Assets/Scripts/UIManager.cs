@@ -14,7 +14,8 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         GameManager gm = GameManager.Instance;
-        
+        if (gm == null || verbaTexto == null) return;
+
         // 1. Atualiza a verba na tela
         verbaTexto.text = "Verba: R$ " + gm.verba.ToString("F0");
 

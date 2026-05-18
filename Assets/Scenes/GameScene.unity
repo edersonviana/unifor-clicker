@@ -5290,7 +5290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   verba: 0
-  verbaPorClique: 1000
+  verbaPorClique: 5
   verbaPorSegundo: 0
   notaMEC: 1
   setoresRecuperados: 0
@@ -10418,6 +10418,7 @@ GameObject:
   - component: {fileID: 1707848875}
   - component: {fileID: 1707848874}
   - component: {fileID: 1707848876}
+  - component: {fileID: 1707848877}
   m_Layer: 5
   m_Name: LogoUnifor
   m_TagString: Untagged
@@ -10503,6 +10504,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43fc924544b61c9e4a068a1e46cfb84c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickController
+--- !u!114 &1707848877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707848872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a743311eaf765695b9147967014fd3f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SetasClick
+  prefabSeta: {fileID: 4861998128852788659, guid: c21dbfaf5c85815fbb6a7f96a6a1350f, type: 3}
+  raio: 150
 --- !u!1 &1708113779
 GameObject:
   m_ObjectHideFlags: 0

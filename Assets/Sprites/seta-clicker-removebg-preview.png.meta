@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 90c53ea778f9ba64b831064c98c2e6aa
+guid: c87fa757457b9c0e38b70178d0c6fb7c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3338396816359078298
-    second: seta-clicker_0
+      213: -4468367236573874378
+    second: seta-clicker-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: seta-clicker_0
+      name: seta-clicker-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 900
-        height: 720
+        x: 124
+        y: 28
+        width: 308
+        height: 397
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6664f9978c1aba1d0800000000000000
-      internalID: -3338396816359078298
+      spriteID: 637350a3cab2df1c0800000000000000
+      internalID: -4468367236573874378
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      seta-clicker_0: -3338396816359078298
+      seta-clicker-removebg-preview_0: -4468367236573874378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
