@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI textoBotaoBibliotecario;
     public TextMeshProUGUI textoBotaoProfessor;  // <-- NOVO
     public TextMeshProUGUI textoBotaoCozinheiro; // <-- NOVO
+    public TextMeshProUGUI textoBotaoClique;     // <-- NOVO
 
     void Update()
     {
@@ -22,25 +23,36 @@ public class UIManager : MonoBehaviour
         // 2. Atualiza o Segurança
         if (textoBotaoSeguranca != null)
         {
-            textoBotaoSeguranca.text = $"Contratar Segurança (R$ {gm.custoSeguranca})\nPossui: {gm.totalSegurancas}";
+            int podeComprarSeg = (int)(gm.verba / gm.custoSeguranca);
+            textoBotaoSeguranca.text = $"Contratar Segurança (R$ {gm.custoSeguranca})\nPossui: {gm.totalSegurancas} | Pode comprar: {podeComprarSeg}";
         }
 
         // 3. Atualiza o Bibliotecário
         if (textoBotaoBibliotecario != null)
         {
-            textoBotaoBibliotecario.text = $"Contratar Bibliotecário (R$ {gm.custoBibliotecario})\nPossui: {gm.totalBibliotecarios}";
+            int podeComprarBib = (int)(gm.verba / gm.custoBibliotecario);
+            textoBotaoBibliotecario.text = $"Contratar Bibliotecário (R$ {gm.custoBibliotecario})\nPossui: {gm.totalBibliotecarios} | Pode comprar: {podeComprarBib}";
         }
 
         // 4. Atualiza o Professor
         if (textoBotaoProfessor != null)
         {
-            textoBotaoProfessor.text = $"Contratar Professor (R$ {gm.custoProfessor})\nPossui: {gm.totalProfessores}";
+            int podeComprarProf = (int)(gm.verba / gm.custoProfessor);
+            textoBotaoProfessor.text = $"Contratar Professor (R$ {gm.custoProfessor})\nPossui: {gm.totalProfessores} | Pode comprar: {podeComprarProf}";
         }
 
-        // 5. Atualiza o Cozinheiro (Para quando você for criar)
+        // 5. Atualiza o Cozinheiro
         if (textoBotaoCozinheiro != null)
         {
-            textoBotaoCozinheiro.text = $"Contratar Cozinheiro (R$ {gm.custoCozinheiro})\nPossui: {gm.totalCozinheiros}";
+            int podeComprarCoz = (int)(gm.verba / gm.custoCozinheiro);
+            textoBotaoCozinheiro.text = $"Contratar Cozinheiro (R$ {gm.custoCozinheiro})\nPossui: {gm.totalCozinheiros} | Pode comprar: {podeComprarCoz}";
+        }
+
+        // 6. Atualiza o Upgrade de Clique
+        if (textoBotaoClique != null)
+        {
+            int podeComprarClique = (int)(gm.verba / gm.custoClique);
+            textoBotaoClique.text = $"Upgrade de Clique (R$ {gm.custoClique})\nValor clique atual: {gm.verbaPorClique} | Pode comprar: {podeComprarClique}";
         }
     }
 }

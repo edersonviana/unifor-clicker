@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SetasClick : MonoBehaviour
 {
@@ -13,17 +12,10 @@ public class SetasClick : MonoBehaviour
         
         if (totalSetas > setasAtuais)
         {
-            AdicionarSeta();
+            setasAtuais++;
+            Instantiate(prefabSeta, transform);
+            ReposicionarTodas();
         }
-    }
-
-    void AdicionarSeta()
-    {
-        setasAtuais++;
-        ReposicionarTodas();
-
-        GameObject novaSeta = Instantiate(prefabSeta, transform);
-        AplicarPosicaoERotacao(novaSeta.GetComponent<RectTransform>(), setasAtuais - 1);
     }
 
     void ReposicionarTodas()

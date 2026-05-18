@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public double custoBibliotecario = 800;
     public double custoProfessor = 1000;
     public double custoCozinheiro = 600;
+    public double custoClique = 100;
 
     void Awake()
     {
@@ -46,6 +47,16 @@ public class GameManager : MonoBehaviour
     public void Clicar()
     {
         verba += verbaPorClique;
+    }
+
+    public void ComprarClique()
+    {
+        if (verba >= custoClique)
+        {
+            verba -= custoClique;
+            verbaPorClique += 1;
+            Debug.Log("Upgrade de clique comprado! Valor: " + verbaPorClique);
+        }
     }
 
     // --- FUNÇÕES DE CONTRATAÇÃO (Adicionadas sem quebrar o resto) ---
