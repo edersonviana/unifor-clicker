@@ -117,6 +117,9 @@ public class SetorManager : MonoBehaviour
         SubtrairProfissionalExigido(gm, profNecessarios);
 
         estadoAtual++;
+
+        gm.notaMEC += 0.7f; // Sobe meio ponto por upgrade.
+        if (gm.notaMEC > 5.0f) gm.notaMEC = 5.0f; // Impede que a nota passe de 5.0
         
         if (estadoAtual == 2) gm.setoresRecuperados++; 
 

@@ -4,6 +4,9 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI verbaTexto;
+
+    [Header("Progresso do Jogo")]
+    public TextMeshProUGUI textoNotaMEC;
     
     [Header("Textos dos Botões de RH")]
     public TextMeshProUGUI textoBotaoSeguranca;
@@ -19,6 +22,30 @@ public class UIManager : MonoBehaviour
 
         // 1. Atualiza a verba na tela
         verbaTexto.text = "Verba: R$ " + gm.verba.ToString("F0");
+
+        // 1.1 ATUALIZA A NOTA MEC E AS CORES
+        if (textoNotaMEC != null)
+        {
+            textoNotaMEC.text = "Nota MEC: " + gm.notaMEC.ToString("F1"); // O "F1" garante que mostre 1 casa decimal (ex: 3.5)
+
+            // Lógica do semáforo de cores
+            if (gm.notaMEC < 2.5f) 
+            {
+                textoNotaMEC.color = Color.red; // Vermelho no início
+            }
+            else if (gm.notaMEC < 3.5f) 
+            {
+                textoNotaMEC.color = new Color(1f, 0.5f, 0f); // Laranja
+            }
+            else if (gm.notaMEC < 5.0f) 
+            {
+                textoNotaMEC.color = Color.yellow; // Amarelo quando estiver quase lá
+            }
+            else 
+            {
+                textoNotaMEC.color = Color.green; // Verde no 5.0 perfeito!
+            }
+        }
 
         // 2. Atualiza o Segurança
         if (textoBotaoSeguranca != null)
