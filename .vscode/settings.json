@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "unifor-clicker-main.slnx"
+    "dotnet.defaultSolution": "unifor-clicker.slnx"
 }

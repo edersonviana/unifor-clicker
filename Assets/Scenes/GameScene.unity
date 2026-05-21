@@ -2462,8 +2462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HiringButton
   tipo: 2
-  somSucesso: {fileID: 8300000, guid: 03e8a9a21c7fd134fbd80284f10c92d8, type: 3}
-  somFalha: {fileID: 8300000, guid: d425e9a0e7860cb4595df27ce40c64a3, type: 3}
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
   audioSource: {fileID: 0}
 --- !u!1 &403405219
 GameObject:
@@ -2893,8 +2893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HiringButton
   tipo: 1
-  somSucesso: {fileID: 8300000, guid: 03e8a9a21c7fd134fbd80284f10c92d8, type: 3}
-  somFalha: {fileID: 8300000, guid: d425e9a0e7860cb4595df27ce40c64a3, type: 3}
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
   audioSource: {fileID: 0}
 --- !u!1 &462245892
 GameObject:
@@ -5161,8 +5161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HiringButton
   tipo: 4
-  somSucesso: {fileID: 8300000, guid: 03e8a9a21c7fd134fbd80284f10c92d8, type: 3}
-  somFalha: {fileID: 8300000, guid: d425e9a0e7860cb4595df27ce40c64a3, type: 3}
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
   audioSource: {fileID: 0}
 --- !u!1 &924979362
 GameObject:
@@ -5389,7 +5389,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8814e70da871a1e4cb139832d5e94e54, type: 2}
   velocidadeEscrita: 0.05
   audioSource: {fileID: 0}
-  somEscrita: {fileID: 8300000, guid: c7a1f191bc95da4478a56405ac6c8a6f, type: 3}
+  somEscrita: {fileID: 8300000, guid: ebe24de8e203261fe8711f7e2b074d0c, type: 3}
 --- !u!4 &934837714
 Transform:
   m_ObjectHideFlags: 0
@@ -5417,7 +5417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ebe8aabb5fdab4bbe1007af4f6bbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  musicaFundo: {fileID: 8300000, guid: 5ae70ddaf9ffafe4cbb97ebdea3ddc1b, type: 3}
+  musicaFundo: {fileID: 8300000, guid: f23d2948b9d77543ebc86413b4dfe769, type: 3}
   verba: 0
   verbaPorClique: 50
   verbaPorSegundo: 0
@@ -7310,8 +7310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HiringButton
   tipo: 4
-  somSucesso: {fileID: 8300000, guid: 03e8a9a21c7fd134fbd80284f10c92d8, type: 3}
-  somFalha: {fileID: 8300000, guid: d425e9a0e7860cb4595df27ce40c64a3, type: 3}
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
   audioSource: {fileID: 0}
 --- !u!1 &1221806695
 GameObject:
@@ -7623,8 +7623,8 @@ MonoBehaviour:
   barraProgresso: {fileID: 1917111647}
   textoPorcentagem: {fileID: 455164452}
   audioSource: {fileID: 0}
-  somAbrir: {fileID: 8300000, guid: 821f1c1f07c8da943a3616f0967c3b78, type: 3}
-  somFechar: {fileID: 8300000, guid: 821f1c1f07c8da943a3616f0967c3b78, type: 3}
+  somAbrir: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
+  somFechar: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -9899,8 +9899,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HiringButton
   tipo: 0
-  somSucesso: {fileID: 8300000, guid: 03e8a9a21c7fd134fbd80284f10c92d8, type: 3}
-  somFalha: {fileID: 8300000, guid: d425e9a0e7860cb4595df27ce40c64a3, type: 3}
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
   audioSource: {fileID: 0}
 --- !u!1 &1584725180
 GameObject:
@@ -11364,8 +11364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HiringButton
   tipo: 3
-  somSucesso: {fileID: 8300000, guid: 03e8a9a21c7fd134fbd80284f10c92d8, type: 3}
-  somFalha: {fileID: 8300000, guid: d425e9a0e7860cb4595df27ce40c64a3, type: 3}
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
   audioSource: {fileID: 0}
 --- !u!1 &1712060233
 GameObject:
@@ -12967,8 +12967,8 @@ MonoBehaviour:
   barraProgresso: {fileID: 842589575}
   textoPorcentagem: {fileID: 1818902647}
   audioSource: {fileID: 0}
-  somAbrir: {fileID: 8300000, guid: 821f1c1f07c8da943a3616f0967c3b78, type: 3}
-  somFechar: {fileID: 8300000, guid: 821f1c1f07c8da943a3616f0967c3b78, type: 3}
+  somAbrir: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
+  somFechar: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -14224,8 +14224,8 @@ MonoBehaviour:
   barraProgresso: {fileID: 1598877375}
   textoPorcentagem: {fileID: 829791890}
   audioSource: {fileID: 0}
-  somAbrir: {fileID: 8300000, guid: 821f1c1f07c8da943a3616f0967c3b78, type: 3}
-  somFechar: {fileID: 8300000, guid: 821f1c1f07c8da943a3616f0967c3b78, type: 3}
+  somAbrir: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
+  somFechar: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
