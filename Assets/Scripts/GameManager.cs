@@ -1,8 +1,13 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    [Header("Áudio")]
+    public AudioClip musicaFundo;
+    private AudioSource audioSource;
 
     [Header("Recursos")]
     public double verba = 0;
@@ -39,6 +44,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (musicaFundo != null && audioSource != null)
+        {
+            audioSource.clip = musicaFundo;
+            audioSource.loop = true;
+            audioSource.playOnAwake = false; // Controlamos via código
+            audioSource.volume = 0.5f; // Volume inicial médio
+            audioSource.Play();
+        }
+    }
+
     void Update()
     {
         verba += verbaPorSegundo * Time.deltaTime;
@@ -49,55 +67,66 @@ public class GameManager : MonoBehaviour
         verba += verbaPorClique;
     }
 
-    public void ComprarClique()
+    public bool ComprarClique()
     {
         if (verba >= custoClique)
         {
             verba -= custoClique;
             verbaPorClique += 1;
+            custoClique *= 1.5; // Aumenta o custo para o próximo
             Debug.Log("Upgrade de clique comprado! Valor: " + verbaPorClique);
+            return true;
         }
+        return false;
     }
 
-    // --- FUNÇÕES DE CONTRATAÇÃO (Adicionadas sem quebrar o resto) ---
+    // --- FUNÇÕES DE CONTRATAÇÃO (Retornam bool para facilitar feedback de áudio) ---
 
-    public void ContratarSeguranca()
+    public bool ContratarSeguranca()
     {
         if (verba >= custoSeguranca)
         {
             verba -= custoSeguranca;
             totalSegurancas++;
             Debug.Log("Segurança contratado! Total: " + totalSegurancas);
+            return true;
         }
+        return false;
     }
 
-    public void ContratarBibliotecario()
+    public bool ContratarBibliotecario()
     {
         if (verba >= custoBibliotecario)
         {
             verba -= custoBibliotecario;
             totalBibliotecarios++;
             Debug.Log("Bibliotecário contratado! Total: " + totalBibliotecarios);
+            return true;
         }
+        return false;
     }
 
-    public void ContratarProfessor()
+    public bool ContratarProfessor()
     {
         if (verba >= custoProfessor)
         {
             verba -= custoProfessor;
             totalProfessores++;
             Debug.Log("Professor contratado! Total: " + totalProfessores);
+            return true;
         }
+        return false;
     }
 
-    public void ContratarCozinheiro()
+    public bool ContratarCozinheiro()
     {
         if (verba >= custoCozinheiro)
         {
             verba -= custoCozinheiro;
             totalCozinheiros++;
             Debug.Log("Cozinheiro contratado! Total: " + totalCozinheiros);
+            return true;
         }
+        return false;
     }
 }

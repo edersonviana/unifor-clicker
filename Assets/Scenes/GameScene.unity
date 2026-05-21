@@ -119,6 +119,99 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &16128805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 16128806}
+  - component: {fileID: 16128808}
+  - component: {fileID: 16128807}
+  m_Layer: 0
+  m_Name: HiringButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &16128806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16128805}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1660.0009, y: -373.0859, z: 0}
+  m_LocalScale: {x: 2.180827, y: 2.180827, z: 2.180827}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 458739891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16128807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16128805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 0
+  somSucesso: {fileID: 0}
+  somFalha: {fileID: 0}
+  audioSource: {fileID: 0}
+--- !u!114 &16128808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16128805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &44595779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,8 +1310,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1503920797}
   m_HandleRect: {fileID: 1503920796}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 1.0000017
+  m_Size: 0.9206205
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2079,6 +2172,9 @@ MonoBehaviour:
   textoBotao: {fileID: 1595703530}
   barraProgresso: {fileID: 1917111647}
   textoPorcentagem: {fileID: 455164452}
+  audioSource: {fileID: 0}
+  somAbrir: {fileID: 0}
+  somFechar: {fileID: 0}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -2243,6 +2339,7 @@ GameObject:
   - component: {fileID: 398745869}
   - component: {fileID: 398745868}
   - component: {fileID: 398745867}
+  - component: {fileID: 398745870}
   m_Layer: 5
   m_Name: Botao_Professor
   m_TagString: Untagged
@@ -2313,19 +2410,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 398745868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 934837715}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ContratarProfessor
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &398745868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2364,6 +2449,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398745865}
   m_CullTransparentMesh: 1
+--- !u!114 &398745870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398745865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 2
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &403405219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +2769,7 @@ GameObject:
   - component: {fileID: 458739894}
   - component: {fileID: 458739893}
   - component: {fileID: 458739892}
+  - component: {fileID: 458739895}
   m_Layer: 5
   m_Name: Botao_Bibliotecario
   m_TagString: Untagged
@@ -2688,6 +2790,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1336945030}
+  - {fileID: 16128806}
   m_Father: {fileID: 970124375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2738,19 +2841,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 458739893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 934837715}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ContratarBibliotecario
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &458739893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2789,6 +2880,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458739890}
   m_CullTransparentMesh: 1
+--- !u!114 &458739895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458739890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 1
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &462245892
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,6 +5037,7 @@ GameObject:
   - component: {fileID: 901341351}
   - component: {fileID: 901341350}
   - component: {fileID: 901341349}
+  - component: {fileID: 901341352}
   m_Layer: 5
   m_Name: Botao_UpgradeBiblioteca
   m_TagString: Untagged
@@ -4950,6 +5058,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1595703529}
+  - {fileID: 978517582}
   m_Father: {fileID: 970124375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5039,6 +5148,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901341347}
   m_CullTransparentMesh: 1
+--- !u!114 &901341352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901341347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 4
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &924979362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,6 +5358,7 @@ GameObject:
   - component: {fileID: 934837713}
   - component: {fileID: 934837715}
   - component: {fileID: 934837716}
+  - component: {fileID: 934837717}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5262,6 +5388,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 216ecece589fd9b43842b9e2f932b250, type: 2}
   - {fileID: 11400000, guid: 8814e70da871a1e4cb139832d5e94e54, type: 2}
   velocidadeEscrita: 0.05
+  audioSource: {fileID: 0}
+  somEscrita: {fileID: 8300000, guid: ebe24de8e203261fe8711f7e2b074d0c, type: 3}
 --- !u!4 &934837714
 Transform:
   m_ObjectHideFlags: 0
@@ -5289,6 +5417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ebe8aabb5fdab4bbe1007af4f6bbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  musicaFundo: {fileID: 8300000, guid: f23d2948b9d77543ebc86413b4dfe769, type: 3}
   verba: 0
   verbaPorClique: 50
   verbaPorSegundo: 0
@@ -5323,6 +5452,103 @@ MonoBehaviour:
   textoBotaoProfessor: {fileID: 1690761920}
   textoBotaoCozinheiro: {fileID: 2070336513}
   textoBotaoClique: {fileID: 1296752284}
+--- !u!82 &934837717
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934837712}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &943968812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5643,6 +5869,99 @@ MonoBehaviour:
   textoBotaoProfessor: {fileID: 0}
   textoBotaoCozinheiro: {fileID: 0}
   textoBotaoClique: {fileID: 0}
+--- !u!1 &978517581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978517582}
+  - component: {fileID: 978517584}
+  - component: {fileID: 978517583}
+  m_Layer: 0
+  m_Name: HiringButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &978517582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978517581}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1660.0055, y: -68.08591, z: 0}
+  m_LocalScale: {x: 2.180827, y: 2.180827, z: 2.180827}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 901341348}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978517583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978517581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 4
+  somSucesso: {fileID: 0}
+  somFalha: {fileID: 0}
+  audioSource: {fileID: 0}
+--- !u!114 &978517584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978517581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &981914306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,6 +7187,7 @@ GameObject:
   - component: {fileID: 1210129606}
   - component: {fileID: 1210129605}
   - component: {fileID: 1210129604}
+  - component: {fileID: 1210129607}
   m_Layer: 5
   m_Name: Botao_Clique
   m_TagString: Untagged
@@ -6938,19 +7258,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1210129605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 934837715}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ComprarClique
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1210129605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6989,6 +7297,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210129602}
   m_CullTransparentMesh: 1
+--- !u!114 &1210129607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210129602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 4
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &1221806695
 GameObject:
   m_ObjectHideFlags: 0
@@ -7298,6 +7622,9 @@ MonoBehaviour:
   textoBotao: {fileID: 1595703530}
   barraProgresso: {fileID: 1917111647}
   textoPorcentagem: {fileID: 455164452}
+  audioSource: {fileID: 0}
+  somAbrir: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
+  somFechar: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -9449,6 +9776,7 @@ GameObject:
   - component: {fileID: 1580587065}
   - component: {fileID: 1580587064}
   - component: {fileID: 1580587063}
+  - component: {fileID: 1580587066}
   m_Layer: 5
   m_Name: Botao_Seguranca
   m_TagString: Untagged
@@ -9519,19 +9847,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1580587064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 934837715}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ContratarSeguranca
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1580587064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9570,6 +9886,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580587061}
   m_CullTransparentMesh: 1
+--- !u!114 &1580587066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580587061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 0
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &1584725180
 GameObject:
   m_ObjectHideFlags: 0
@@ -10304,6 +10636,9 @@ MonoBehaviour:
   textoBotao: {fileID: 1595703530}
   barraProgresso: {fileID: 842589575}
   textoPorcentagem: {fileID: 1818902647}
+  audioSource: {fileID: 0}
+  somAbrir: {fileID: 0}
+  somFechar: {fileID: 0}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -10696,6 +11031,7 @@ GameObject:
   - component: {fileID: 1707848874}
   - component: {fileID: 1707848876}
   - component: {fileID: 1707848877}
+  - component: {fileID: 1707848878}
   m_Layer: 5
   m_Name: LogoUnifor
   m_TagString: Untagged
@@ -10781,6 +11117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43fc924544b61c9e4a068a1e46cfb84c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickController
+  clickSound: {fileID: 0}
 --- !u!114 &1707848877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10795,6 +11132,103 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SetasClick
   prefabSeta: {fileID: 4861998128852788659, guid: c21dbfaf5c85815fbb6a7f96a6a1350f, type: 3}
   raio: 150
+--- !u!82 &1707848878
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707848872}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1708113779
 GameObject:
   m_ObjectHideFlags: 0
@@ -10807,6 +11241,7 @@ GameObject:
   - component: {fileID: 1708113783}
   - component: {fileID: 1708113782}
   - component: {fileID: 1708113781}
+  - component: {fileID: 1708113784}
   m_Layer: 5
   m_Name: Botao_Cozinheiro
   m_TagString: Untagged
@@ -10877,19 +11312,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1708113782}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 934837715}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ContratarCozinheiro
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1708113782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10928,6 +11351,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708113779}
   m_CullTransparentMesh: 1
+--- !u!114 &1708113784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708113779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98330f2c37d00914bb95e9fc61293f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HiringButton
+  tipo: 3
+  somSucesso: {fileID: 8300000, guid: c47cf4d804113b0c6ba479e17274d8e4, type: 3}
+  somFalha: {fileID: 8300000, guid: e408d42c3dee7c27991747d778c7ea32, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &1712060233
 GameObject:
   m_ObjectHideFlags: 0
@@ -12527,6 +12966,9 @@ MonoBehaviour:
   textoBotao: {fileID: 1595703530}
   barraProgresso: {fileID: 842589575}
   textoPorcentagem: {fileID: 1818902647}
+  audioSource: {fileID: 0}
+  somAbrir: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
+  somFechar: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -13781,6 +14223,9 @@ MonoBehaviour:
   textoBotao: {fileID: 1595703530}
   barraProgresso: {fileID: 1598877375}
   textoPorcentagem: {fileID: 829791890}
+  audioSource: {fileID: 0}
+  somAbrir: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
+  somFechar: {fileID: 8300000, guid: b2da630989c8e544fb5d711b6763737e, type: 3}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2
@@ -13891,6 +14336,9 @@ MonoBehaviour:
   textoBotao: {fileID: 1595703530}
   barraProgresso: {fileID: 1598877375}
   textoPorcentagem: {fileID: 829791890}
+  audioSource: {fileID: 0}
+  somAbrir: {fileID: 0}
+  somFechar: {fileID: 0}
   custoVerbaN1: 1500
   reqSegurancasN1: 2
   reqEspecificoN1: 2

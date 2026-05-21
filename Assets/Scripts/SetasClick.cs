@@ -8,6 +8,8 @@ public class SetasClick : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance == null) return;
+
         int totalSetas = (int)GameManager.Instance.verbaPorClique;
         
         if (totalSetas > setasAtuais)

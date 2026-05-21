@@ -16,6 +16,11 @@ public class SetorManager : MonoBehaviour
     public Image barraProgresso; // <-- NOVO: Arraste a imagem azul (fill) da barra aqui
     public TextMeshProUGUI textoPorcentagem;
 
+    [Header("Áudios")]
+    public AudioSource audioSource;
+    public AudioClip somAbrir;
+    public AudioClip somFechar;
+
     private int estadoAtual = 0; // Começa no 0 (Ruínas)
 
     // NOVO: Variável global que avisa quem é o "dono" do menu lateral no momento
@@ -37,6 +42,21 @@ public class SetorManager : MonoBehaviour
 
     void Start()
     {
+        // Se não tiver um AudioSource configurado, tenta pegar no próprio objeto
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        // Se ainda for nulo, adiciona um automaticamente
+        if (audioSource == null)
+        {
+            Debug.Log("AudioSource não encontrado no setor " + nomeDoSetor + ". Adicionando um agora...");
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+            audioSource.spatialBlend = 0; // 2D
+        }
+
         AtualizarVisual();
         
         // Se o jogo começou agora, o primeiro setor a carregar assume o controle do menu
@@ -46,11 +66,37 @@ public class SetorManager : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        // Toca o som de abrir sempre que o objeto for ativado (instância aparece)
+        if (audioSource != null && somAbrir != null)
+        {
+            audioSource.spatialBlend = 0; // Garante 2D
+            audioSource.PlayOneShot(somAbrir);
+        }
+    }
+
+    void OnDisable()
+    {
+        // Toca o som de fechar sempre que o objeto for desativado (instância desaparece)
+        // Nota: PlayOneShot pode não funcionar no OnDisable se o objeto for destruído imediatamente,
+        // mas se for apenas desativado (SetActive(false)), funciona perfeitamente.
+        if (audioSource != null && somFechar != null)
+        {
+            audioSource.PlayOneShot(somFechar);
+        }
+    }
+
     // --- CORREÇÃO DO BUG DO BOTÃO (PRÉDIOS BRIGANDO) ---
     // Esta função deve ser chamada quando você clica na imagem do prédio para expandir
     public void AtivarEsteSetor()
     {
+        Debug.Log($"Ativando setor: {nomeDoSetor}");
         setorAtivo = this;
+
+        // Nota: O som de abrir já será tocado pelo OnEnable se o objeto for ativado aqui.
+        // Se o objeto já estiver ativo e apenas trocarmos os dados, podemos tocar manualmente:
+        // audioSource.PlayOneShot(somAbrir);
 
         if (botaoUpgrade != null)
         {
@@ -101,6 +147,11 @@ public class SetorManager : MonoBehaviour
         if (estadoAtual >= 2) return;
 
         GameManager gm = GameManager.Instance;
+
+        // Tenta pegar o feedback de áudio do botão para tocar os sons "padrão" do botão
+        ButtonAudioFeedback feedbackBotao = null;
+        if (botaoUpgrade != null) feedbackBotao = botaoUpgrade.GetComponent<ButtonAudioFeedback>();
+
         double verbaNecessaria = (estadoAtual == 0) ? custoVerbaN1 : custoVerbaN2;
         int segurancasNecessarios = (estadoAtual == 0) ? reqSegurancasN1 : reqSegurancasN2;
         int profNecessarios = (estadoAtual == 0) ? reqEspecificoN1 : reqEspecificoN2;
@@ -108,6 +159,12 @@ public class SetorManager : MonoBehaviour
 
         if (gm.verba < verbaNecessaria || gm.totalSegurancas < segurancasNecessarios || profAtuais < profNecessarios)
         {
+            // O feedback de áudio de falha é tratado pelo script ButtonAudioFeedback no botão
+            if (feedbackBotao != null)
+            {
+                feedbackBotao.TocarFalha();
+            }
+
             return; 
         }
 
@@ -117,6 +174,12 @@ public class SetorManager : MonoBehaviour
         SubtrairProfissionalExigido(gm, profNecessarios);
 
         estadoAtual++;
+
+        // O feedback de áudio de sucesso é tratado pelo script ButtonAudioFeedback no botão
+        if (feedbackBotao != null)
+        {
+            feedbackBotao.TocarSucesso();
+        }
 
         gm.notaMEC += 0.7f; // Sobe meio ponto por upgrade.
         if (gm.notaMEC > 5.0f) gm.notaMEC = 5.0f; // Impede que a nota passe de 5.0
