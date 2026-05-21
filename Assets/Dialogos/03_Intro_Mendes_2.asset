@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02953504c4ad4b2469764f319400ef17, type: 3}
+  m_Name: 03_Intro_Mendes_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoData
+  nomePersonagem: Sr. Mendes
+  fotoPersonagem: {fileID: -1220952104866851948, guid: fb496cf82c8b0fe47978e11f903649b9, type: 3}
+  falas:
+  - "Voc\xEA est\xE1 olhando para ela. O caixa est\xE1 zerado. A energia mal funciona.
+    D\xEA meia volta."
+  - "Como voc\xEA... ?"
