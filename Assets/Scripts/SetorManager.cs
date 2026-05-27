@@ -6,24 +6,38 @@ public class SetorManager : MonoBehaviour
 {
     [Header("Interface e Visual")]
     public string nomeDoSetor = "Setor";
-    public Image imagemNormal;    // <-- Para o SetorCard (encolhido)
-    public Image imagemExpandida; // <-- Para a ImagemSetor (ampliado)
+    public Image imagemNormal;    
+    public Image imagemExpandida; 
     public Sprite[] estadosSprite = new Sprite[3]; // 0 = Ruínas, 1 = Em Obras, 2 = Concluído
     public Button botaoUpgrade;
     public TextMeshProUGUI textoBotao;
     
     [Header("Barra de Progresso")]
-    public Image barraProgresso; // <-- NOVO: Arraste a imagem azul (fill) da barra aqui
+    public Image barraProgresso; 
     public TextMeshProUGUI textoPorcentagem;
+
+    [Header("Personagens: Menu Lateral (SetorCard)")]
+    public GameObject[] personagensSetorCard; 
+
+    [Header("Personagens: Tela Central (ImagemSetor)")]
+    public GameObject[] personagensImagemSetor;
+
+    [Header("Imagens Felizes (Serve para os dois acima)")]
+    public Sprite[] spritesFelizes; 
+
+    // --- NOVO: Variável para as fumaças ---
+    [Header("Fumaças da Obra")]
+    // Arraste para cá todas as fumaças que devem sumir (do menu e da tela central)
+    public GameObject[] fumaçasDoSetor; 
+    // --------------------------------------
 
     [Header("Áudios")]
     public AudioSource audioSource;
     public AudioClip somAbrir;
     public AudioClip somFechar;
 
-    private int estadoAtual = 0; // Começa no 0 (Ruínas)
+    private int estadoAtual = 0;
 
-    // NOVO: Variável global que avisa quem é o "dono" do menu lateral no momento
     public static SetorManager setorAtivo; 
 
     [Header("Requisitos: Nível 1 (Ir para Obras)")]
@@ -42,77 +56,52 @@ public class SetorManager : MonoBehaviour
 
     void Start()
     {
-        // Se não tiver um AudioSource configurado, tenta pegar no próprio objeto
-        if (audioSource == null)
-        {
-            audioSource = GetComponent<AudioSource>();
-        }
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
 
-        // Se ainda for nulo, adiciona um automaticamente
         if (audioSource == null)
         {
-            Debug.Log("AudioSource não encontrado no setor " + nomeDoSetor + ". Adicionando um agora...");
             audioSource = gameObject.AddComponent<AudioSource>();
             audioSource.playOnAwake = false;
-            audioSource.spatialBlend = 0; // 2D
+            audioSource.spatialBlend = 0;
         }
 
         AtualizarVisual();
         
-        // Se o jogo começou agora, o primeiro setor a carregar assume o controle do menu
-        if (setorAtivo == null) 
-        {
-            AtivarEsteSetor();
-        }
+        if (setorAtivo == null) AtivarEsteSetor();
     }
 
     void OnEnable()
     {
-        // Toca o som de abrir sempre que o objeto for ativado (instância aparece)
         if (audioSource != null && somAbrir != null)
         {
-            audioSource.spatialBlend = 0; // Garante 2D
+            audioSource.spatialBlend = 0; 
             audioSource.PlayOneShot(somAbrir);
         }
     }
 
     void OnDisable()
     {
-        // Toca o som de fechar sempre que o objeto for desativado (instância desaparece)
-        // Nota: PlayOneShot pode não funcionar no OnDisable se o objeto for destruído imediatamente,
-        // mas se for apenas desativado (SetActive(false)), funciona perfeitamente.
         if (audioSource != null && somFechar != null)
         {
             audioSource.PlayOneShot(somFechar);
         }
     }
 
-    // --- CORREÇÃO DO BUG DO BOTÃO (PRÉDIOS BRIGANDO) ---
-    // Esta função deve ser chamada quando você clica na imagem do prédio para expandir
     public void AtivarEsteSetor()
     {
-        Debug.Log($"Ativando setor: {nomeDoSetor}");
         setorAtivo = this;
-
-        // Nota: O som de abrir já será tocado pelo OnEnable se o objeto for ativado aqui.
-        // Se o objeto já estiver ativo e apenas trocarmos os dados, podemos tocar manualmente:
-        // audioSource.PlayOneShot(somAbrir);
 
         if (botaoUpgrade != null)
         {
             botaoUpgrade.onClick.RemoveAllListeners();
             botaoUpgrade.onClick.AddListener(FazerUpgrade);
-            VerificarRequisitos(); // Atualiza o texto na mesma hora
+            VerificarRequisitos(); 
         }
     }
 
     void Update()
     {
-        // O código do botão SÓ RODA se este prédio for o que você clicou por último
-        if (setorAtivo == this)
-        {
-            VerificarRequisitos();
-        }
+        if (setorAtivo == this) VerificarRequisitos();
     }
 
     private void VerificarRequisitos()
@@ -147,8 +136,6 @@ public class SetorManager : MonoBehaviour
         if (estadoAtual >= 2) return;
 
         GameManager gm = GameManager.Instance;
-
-        // Tenta pegar o feedback de áudio do botão para tocar os sons "padrão" do botão
         ButtonAudioFeedback feedbackBotao = null;
         if (botaoUpgrade != null) feedbackBotao = botaoUpgrade.GetComponent<ButtonAudioFeedback>();
 
@@ -159,30 +146,20 @@ public class SetorManager : MonoBehaviour
 
         if (gm.verba < verbaNecessaria || gm.totalSegurancas < segurancasNecessarios || profAtuais < profNecessarios)
         {
-            // O feedback de áudio de falha é tratado pelo script ButtonAudioFeedback no botão
-            if (feedbackBotao != null)
-            {
-                feedbackBotao.TocarFalha();
-            }
-
+            if (feedbackBotao != null) feedbackBotao.TocarFalha();
             return; 
         }
 
-        // --- CORREÇÃO: AGORA ELE SUBTRAI OS FUNCIONÁRIOS DA SUA CONTA ---
         gm.verba -= verbaNecessaria;
         gm.totalSegurancas -= segurancasNecessarios;
         SubtrairProfissionalExigido(gm, profNecessarios);
 
         estadoAtual++;
 
-        // O feedback de áudio de sucesso é tratado pelo script ButtonAudioFeedback no botão
-        if (feedbackBotao != null)
-        {
-            feedbackBotao.TocarSucesso();
-        }
+        if (feedbackBotao != null) feedbackBotao.TocarSucesso();
 
-        gm.notaMEC += 0.7f; // Sobe meio ponto por upgrade.
-        if (gm.notaMEC > 5.0f) gm.notaMEC = 5.0f; // Impede que a nota passe de 5.0
+        gm.notaMEC += 0.7f; 
+        if (gm.notaMEC > 5.0f) gm.notaMEC = 5.0f; 
         
         if (estadoAtual == 2) gm.setoresRecuperados++; 
 
@@ -201,24 +178,21 @@ public class SetorManager : MonoBehaviour
         {
             Sprite spriteAtual = estadosSprite[estadoAtual];
 
-            // 1. Atualiza a imagem pequena (SetorCard)
             if (imagemNormal != null)
             {
                 imagemNormal.sprite = spriteAtual;
                 imagemNormal.enabled = false;
-                imagemNormal.enabled = true; // Força o redesenho
+                imagemNormal.enabled = true; 
             }
 
-            // 2. Atualiza a imagem grande (ImagemSetor)
             if (imagemExpandida != null)
             {
                 imagemExpandida.sprite = spriteAtual;
                 imagemExpandida.enabled = false;
-                imagemExpandida.enabled = true; // Força o redesenho
+                imagemExpandida.enabled = true; 
             }
         }
 
-        // --- BARRA DE PROGRESSO ---
         if (barraProgresso != null)
         {
             if (estadoAtual == 0) barraProgresso.fillAmount = 0f;
@@ -226,12 +200,18 @@ public class SetorManager : MonoBehaviour
             else if (estadoAtual == 2) barraProgresso.fillAmount = 1f;
         }
 
-        // --- PORCENTAGEM ---
         if (textoPorcentagem != null)
         {
             if (estadoAtual == 0) textoPorcentagem.text = "0%";
             else if (estadoAtual == 1) textoPorcentagem.text = "50%";
             else if (estadoAtual == 2) textoPorcentagem.text = "100%";
+        }
+
+        if (estadoAtual == 2)
+        {
+            DeixarPersonagensFelizes();
+            // --- NOVO: Chama a função para sumir com as fumaças ---
+            DesativarFumaças();
         }
     }
 
@@ -271,7 +251,6 @@ public class SetorManager : MonoBehaviour
     {
         if (estadoAtual >= 2) return;
         
-        // Puxa o nome correto baseado na configuração do Inspector
         string nomeProfissao = ObterNomeProfissaoPlural();
 
         if (textoBotao != null)
@@ -279,4 +258,58 @@ public class SetorManager : MonoBehaviour
             textoBotao.text = $"Melhorar {nomeDoSetor}\nVerba: {vrb}\nSeguranças: {seg}\n{nomeProfissao}: {prof}";
         }
     }
+
+    private void DeixarPersonagensFelizes()
+    {
+        if (spritesFelizes == null) return;
+
+        if (personagensSetorCard != null)
+        {
+            for (int i = 0; i < personagensSetorCard.Length; i++)
+            {
+                if (personagensSetorCard[i] != null && i < spritesFelizes.Length && spritesFelizes[i] != null)
+                {
+                    TrocarSprite(personagensSetorCard[i], spritesFelizes[i]);
+                }
+            }
+        }
+
+        if (personagensImagemSetor != null)
+        {
+            for (int i = 0; i < personagensImagemSetor.Length; i++)
+            {
+                if (personagensImagemSetor[i] != null && i < spritesFelizes.Length && spritesFelizes[i] != null)
+                {
+                    TrocarSprite(personagensImagemSetor[i], spritesFelizes[i]);
+                }
+            }
+        }
+    }
+
+    private void TrocarSprite(GameObject boneco, Sprite spriteFeliz)
+    {
+        Animator anim = boneco.GetComponent<Animator>();
+        if (anim != null) anim.enabled = false;
+
+        SpriteRenderer sr = boneco.GetComponent<SpriteRenderer>();
+        if (sr != null) sr.sprite = spriteFeliz;
+
+        Image img = boneco.GetComponent<Image>();
+        if (img != null) img.sprite = spriteFeliz;
+    }
+
+    // --- NOVO: FUNÇÃO QUE DESATIVA AS FUMAÇAS ---
+    private void DesativarFumaças()
+    {
+        if (fumaçasDoSetor == null) return;
+
+        for (int i = 0; i < fumaçasDoSetor.Length; i++)
+        {
+            if (fumaçasDoSetor[i] != null)
+            {
+                fumaçasDoSetor[i].SetActive(false); // Isso desliga o objeto na cena
+            }
+        }
+    }
+    // --------------------------------------------
 }
