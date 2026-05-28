@@ -824,8 +824,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012779, y: -0.00087547}
-  m_SizeDelta: {x: 880, y: 940}
+  m_AnchoredPosition: {x: 0.00012779, y: -0.0084338}
+  m_SizeDelta: {x: 880, y: 1341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &187084908
 GameObject:
@@ -5528,7 +5528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   musicaFundo: {fileID: 8300000, guid: f23d2948b9d77543ebc86413b4dfe769, type: 3}
   verba: 0
-  verbaPorClique: 10000
+  verbaPorClique: 1000
   verbaPorSegundo: 0
   notaMEC: 1
   setoresRecuperados: 0
@@ -7849,8 +7849,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.5235, y: 62.931274}
-  m_SizeDelta: {x: 17.0471, y: -396.0375}
+  m_AnchoredPosition: {x: 1.6990967, y: 62.931274}
+  m_SizeDelta: {x: -3.3983, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284375972
 MonoBehaviour:
@@ -13035,8 +13035,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.5235, y: 62.931244}
-  m_SizeDelta: {x: 17.0471, y: -396.0375}
+  m_AnchoredPosition: {x: 1.6990967, y: 62.931274}
+  m_SizeDelta: {x: -3.3983, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939265387
 MonoBehaviour:
@@ -14150,8 +14150,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.5235, y: 62.931244}
-  m_SizeDelta: {x: 17.0471, y: -396.0375}
+  m_AnchoredPosition: {x: 1.6990967, y: 62.931274}
+  m_SizeDelta: {x: -3.3983, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3786377968349081145
 MonoBehaviour:
