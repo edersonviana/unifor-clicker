@@ -5528,7 +5528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   musicaFundo: {fileID: 8300000, guid: f23d2948b9d77543ebc86413b4dfe769, type: 3}
   verba: 0
-  verbaPorClique: 1000
+  verbaPorClique: 50
   verbaPorSegundo: 0
   notaMEC: 1
   setoresRecuperados: 0
