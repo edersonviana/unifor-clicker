@@ -6,17 +6,21 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class DialogManager : MonoBehaviour 
 {
+    // --- NOVO: PADRÃO SINGLETON (PERMITE O INSTANCE) ---
+    public static DialogManager Instance { get; private set; }
+    // ----------------------------------------------------
+
     [Header("Componentes da UI")]
-    public TextMeshProUGUI nomeUI;
-    public TextMeshProUGUI falaUI;
     public Image fotoUI;
     public GameObject painelDialogo;
+    public TextMeshProUGUI nomeUI;
+    public TextMeshProUGUI falaUI;
 
     [Header("Arquivos de Diálogo (Arraste aqui)")]
-    public DialogoData[] cenaAtual; // A lista dos seus 4 arquivos
+    public DialogoData[] cenaAtual; // A lista dos seus arquivos
 
     [Header("Configurações")]
-    public float velocidadeEscrita = 0.05f;
+    public float velocidadEscrita = 0.05f;
 
     [Header("Áudio")]
     public AudioSource audioSource;
@@ -28,18 +32,36 @@ public class DialogManager : MonoBehaviour
 
     void Awake()
     {
-        // Tenta pegar o AudioSource automaticamente se não for arrastado
+        // Configuração do Singleton na inicialização
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
     {
-        // Começa o diálogo automaticamente ao dar Play
+        // Começa o diálogo automaticamente se houver algo arrastado no Inspector do Manager
         if (cenaAtual.Length > 0)
         {
             IniciarSequencia();
         }
     }
+
+    // --- NOVO: FUNÇÃO PARA OUTROS SCRIPTS PASSAREM UM DIÁLOGO DIRETO ---
+    public void IniciarDialogo(DialogoData novoDialogo)
+    {
+        cenaAtual = new DialogoData[] { novoDialogo };
+        IniciarSequencia();
+    }
+    // ------------------------------------------------------------------
 
     public void IniciarSequencia() 
     {
@@ -60,14 +82,12 @@ public class DialogManager : MonoBehaviour
     {
         if (escrevendo) 
         {
-            // Pula a animação se clicar
             StopAllCoroutines();
             falaUI.text = cenaAtual[indexArquivo].falas[indiceFala - 1];
             escrevendo = false;
             return;
         }
 
-        // Verifica se ainda tem falas no arquivo atual
         if (indiceFala < cenaAtual[indexArquivo].falas.Length) 
         {
             StartCoroutine(EscreverFrase(cenaAtual[indexArquivo].falas[indiceFala]));
@@ -75,7 +95,6 @@ public class DialogManager : MonoBehaviour
         } 
         else 
         {
-            // Arquivo acabou. Tem um próximo arquivo na sequência?
             indexArquivo++;
             if (indexArquivo < cenaAtual.Length)
             {
@@ -83,7 +102,6 @@ public class DialogManager : MonoBehaviour
             }
             else
             {
-                // Cena acabou, esconde o painel!
                 painelDialogo.SetActive(false);
             }
         }
@@ -103,7 +121,7 @@ public class DialogManager : MonoBehaviour
                 audioSource.PlayOneShot(somEscrita);
             }
 
-            yield return new WaitForSeconds(velocidadeEscrita);
+            yield return new WaitForSeconds(velocidadEscrita);
         }
         escrevendo = false;
     }

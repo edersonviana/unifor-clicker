@@ -1,34 +1,39 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class SetorManager : MonoBehaviour
 {
     [Header("Interface e Visual")]
     public string nomeDoSetor = "Setor";
-    public Image imagemNormal;    
-    public Image imagemExpandida; 
+    public Image imagemNormal;
+    public Image imagemExpandida;
     public Sprite[] estadosSprite = new Sprite[3]; // 0 = Ruínas, 1 = Em Obras, 2 = Concluído
     public Button botaoUpgrade;
     public TextMeshProUGUI textoBotao;
-    
+
+    [Header("Diálogos de Conclusão")]
+    public DialogoData dialogoConclusao; // Arraste o diálogo específico deste prédio aqui
+    public DialogoData dialogoFinalJogo; // Arraste o diálogo da vitória final aqui
+
     [Header("Barra de Progresso")]
-    public Image barraProgresso; 
+    public Image barraProgresso;
     public TextMeshProUGUI textoPorcentagem;
 
     [Header("Personagens: Menu Lateral (SetorCard)")]
-    public GameObject[] personagensSetorCard; 
+    public GameObject[] personagensSetorCard;
 
     [Header("Personagens: Tela Central (ImagemSetor)")]
     public GameObject[] personagensImagemSetor;
 
     [Header("Imagens Felizes (Serve para os dois acima)")]
-    public Sprite[] spritesFelizes; 
+    public Sprite[] spritesFelizes;
 
     // --- NOVO: Variável para as fumaças ---
     [Header("Fumaças da Obra")]
     // Arraste para cá todas as fumaças que devem sumir (do menu e da tela central)
-    public GameObject[] fumaçasDoSetor; 
+    public GameObject[] fumaçasDoSetor;
     // --------------------------------------
 
     [Header("Áudios")]
@@ -38,7 +43,7 @@ public class SetorManager : MonoBehaviour
 
     private int estadoAtual = 0;
 
-    public static SetorManager setorAtivo; 
+    public static SetorManager setorAtivo;
 
     [Header("Requisitos: Nível 1 (Ir para Obras)")]
     public double custoVerbaN1 = 1500;
@@ -66,7 +71,7 @@ public class SetorManager : MonoBehaviour
         }
 
         AtualizarVisual();
-        
+
         if (setorAtivo == null) AtivarEsteSetor();
     }
 
@@ -74,7 +79,7 @@ public class SetorManager : MonoBehaviour
     {
         if (audioSource != null && somAbrir != null)
         {
-            audioSource.spatialBlend = 0; 
+            audioSource.spatialBlend = 0;
             audioSource.PlayOneShot(somAbrir);
         }
     }
@@ -95,7 +100,7 @@ public class SetorManager : MonoBehaviour
         {
             botaoUpgrade.onClick.RemoveAllListeners();
             botaoUpgrade.onClick.AddListener(FazerUpgrade);
-            VerificarRequisitos(); 
+            VerificarRequisitos();
         }
     }
 
@@ -106,15 +111,15 @@ public class SetorManager : MonoBehaviour
 
     private void VerificarRequisitos()
     {
-        if (estadoAtual >= 2) 
+        if (estadoAtual >= 2)
         {
             if (botaoUpgrade != null) botaoUpgrade.interactable = false;
             if (textoBotao != null) textoBotao.text = $"{nomeDoSetor} Concluído!";
-            return; 
+            return;
         }
 
         bool podeComprar = false;
-        GameManager gm = GameManager.Instance; 
+        GameManager gm = GameManager.Instance;
 
         double verbaNecessaria = (estadoAtual == 0) ? custoVerbaN1 : custoVerbaN2;
         int segurancasNecessarios = (estadoAtual == 0) ? reqSegurancasN1 : reqSegurancasN2;
@@ -147,7 +152,7 @@ public class SetorManager : MonoBehaviour
         if (gm.verba < verbaNecessaria || gm.totalSegurancas < segurancasNecessarios || profAtuais < profNecessarios)
         {
             if (feedbackBotao != null) feedbackBotao.TocarFalha();
-            return; 
+            return;
         }
 
         gm.verba -= verbaNecessaria;
@@ -158,10 +163,10 @@ public class SetorManager : MonoBehaviour
 
         if (feedbackBotao != null) feedbackBotao.TocarSucesso();
 
-        gm.notaMEC += 0.7f; 
-        if (gm.notaMEC > 5.0f) gm.notaMEC = 5.0f; 
-        
-        if (estadoAtual == 2) gm.setoresRecuperados++; 
+        gm.notaMEC += 0.7f;
+        if (gm.notaMEC > 5.0f) gm.notaMEC = 5.0f;
+
+        // CORREÇÃO: Removido o gm.setoresRecuperados++ duplicado daqui
 
         AtualizarVisual();
 
@@ -169,6 +174,29 @@ public class SetorManager : MonoBehaviour
         {
             if (botaoUpgrade != null) botaoUpgrade.interactable = false;
             if (textoBotao != null) textoBotao.text = $"{nomeDoSetor} Concluído!";
+
+            gm.setoresRecuperados++;
+
+            // Usamos um pequeno atraso (0.2s) para garantir que a imagem trocou 
+            // antes do painel de diálogo subir por cima de tudo
+            StartCoroutine(DispararDialogosComAtraso(gm));
+        }
+    }
+
+    private IEnumerator DispararDialogosComAtraso(GameManager gm)
+    {
+        yield return new WaitForSeconds(0.2f);
+
+        // 1. Toca o diálogo de conclusão do prédio
+        if (dialogoConclusao != null)
+        {
+            DialogManager.Instance.IniciarDialogo(dialogoConclusao);
+        }
+
+        // 2. Se for o último prédio, agenda o final
+        if (gm.setoresRecuperados >= 3 && dialogoFinalJogo != null)
+        {
+            Invoke("ChamarDialogoFinal", 4f); 
         }
     }
 
@@ -182,14 +210,14 @@ public class SetorManager : MonoBehaviour
             {
                 imagemNormal.sprite = spriteAtual;
                 imagemNormal.enabled = false;
-                imagemNormal.enabled = true; 
+                imagemNormal.enabled = true;
             }
 
             if (imagemExpandida != null)
             {
                 imagemExpandida.sprite = spriteAtual;
                 imagemExpandida.enabled = false;
-                imagemExpandida.enabled = true; 
+                imagemExpandida.enabled = true;
             }
         }
 
@@ -250,7 +278,7 @@ public class SetorManager : MonoBehaviour
     private void AtualizarTextoBotao(double vrb, int seg, int prof)
     {
         if (estadoAtual >= 2) return;
-        
+
         string nomeProfissao = ObterNomeProfissaoPlural();
 
         if (textoBotao != null)
@@ -309,6 +337,14 @@ public class SetorManager : MonoBehaviour
             {
                 fumaçasDoSetor[i].SetActive(false); // Isso desliga o objeto na cena
             }
+        }
+    }
+
+    private void ChamarDialogoFinal()
+    {
+        if (dialogoFinalJogo != null)
+        {
+            DialogManager.Instance.IniciarDialogo(dialogoFinalJogo);
         }
     }
     // --------------------------------------------

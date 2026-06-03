@@ -1310,8 +1310,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1503920797}
   m_HandleRect: {fileID: 1503920796}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 1.0000005
+  m_Size: 0.8432068
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2170,6 +2170,8 @@ MonoBehaviour:
   - {fileID: -9154277840561222583, guid: 5a0d0780d718de748a8e6b59b4d1c91a, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
+  dialogoConclusao: {fileID: 11400000, guid: eb0a0fb5cee20744a850084e1052a47f, type: 2}
+  dialogoFinalJogo: {fileID: 11400000, guid: d917ae0a316da5248a7b9f926bd500a9, type: 2}
   barraProgresso: {fileID: 1917111647}
   textoPorcentagem: {fileID: 455164452}
   personagensSetorCard:
@@ -5487,16 +5489,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7553e0e9fd8841ad3f0f30a80e85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogManager
-  nomeUI: {fileID: 1377473320}
-  falaUI: {fileID: 1112780567}
   fotoUI: {fileID: 1467032379}
   painelDialogo: {fileID: 88491108}
+  nomeUI: {fileID: 1377473320}
+  falaUI: {fileID: 1112780567}
   cenaAtual:
   - {fileID: 11400000, guid: 8baab0c26b3291a4595121a878433c66, type: 2}
   - {fileID: 11400000, guid: b35d2d9c5abe10244ba7a06baebda8fb, type: 2}
   - {fileID: 11400000, guid: 216ecece589fd9b43842b9e2f932b250, type: 2}
   - {fileID: 11400000, guid: 8814e70da871a1e4cb139832d5e94e54, type: 2}
-  velocidadeEscrita: 0.05
+  velocidadEscrita: 0.05
   audioSource: {fileID: 0}
   somEscrita: {fileID: 8300000, guid: ebe24de8e203261fe8711f7e2b074d0c, type: 3}
 --- !u!4 &934837714
@@ -7849,7 +7851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.6990967, y: 62.931274}
+  m_AnchoredPosition: {x: 1.6990967, y: 62.931396}
   m_SizeDelta: {x: -3.3983, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284375972
@@ -7911,6 +7913,8 @@ MonoBehaviour:
   - {fileID: -9154277840561222583, guid: 5a0d0780d718de748a8e6b59b4d1c91a, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
+  dialogoConclusao: {fileID: 11400000, guid: eb0a0fb5cee20744a850084e1052a47f, type: 2}
+  dialogoFinalJogo: {fileID: 11400000, guid: d917ae0a316da5248a7b9f926bd500a9, type: 2}
   barraProgresso: {fileID: 1917111647}
   textoPorcentagem: {fileID: 455164452}
   personagensSetorCard: []
@@ -10747,6 +10751,8 @@ MonoBehaviour:
   - {fileID: -2934315996875454622, guid: 0d2dc2c735952dd47b2d6b969ae6e480, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
+  dialogoConclusao: {fileID: 11400000, guid: 921a6d36c6ef55c42afa4bdcd1a23386, type: 2}
+  dialogoFinalJogo: {fileID: 11400000, guid: d917ae0a316da5248a7b9f926bd500a9, type: 2}
   barraProgresso: {fileID: 842589575}
   textoPorcentagem: {fileID: 1818902647}
   personagensSetorCard:
@@ -11251,6 +11257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickController
   clickSound: {fileID: 0}
+  escalaMinima: 0.97
+  duracaoAnimacao: 0.15
 --- !u!114 &1707848877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13035,7 +13043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.6990967, y: 62.931274}
+  m_AnchoredPosition: {x: 1.6990967, y: 62.931396}
   m_SizeDelta: {x: -3.3983, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939265387
@@ -13097,6 +13105,8 @@ MonoBehaviour:
   - {fileID: -2934315996875454622, guid: 0d2dc2c735952dd47b2d6b969ae6e480, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
+  dialogoConclusao: {fileID: 11400000, guid: 921a6d36c6ef55c42afa4bdcd1a23386, type: 2}
+  dialogoFinalJogo: {fileID: 11400000, guid: d917ae0a316da5248a7b9f926bd500a9, type: 2}
   barraProgresso: {fileID: 842589575}
   textoPorcentagem: {fileID: 1818902647}
   personagensSetorCard: []
@@ -14150,7 +14160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.6990967, y: 62.931274}
+  m_AnchoredPosition: {x: 1.6990967, y: 62.931396}
   m_SizeDelta: {x: -3.3983, y: -396.0375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3786377968349081145
@@ -14267,6 +14277,8 @@ MonoBehaviour:
   - {fileID: -3596379322837086861, guid: 916e04619b870d6449011978397e7998, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
+  dialogoConclusao: {fileID: 11400000, guid: e41bf62b8aa826144b493d07999adff3, type: 2}
+  dialogoFinalJogo: {fileID: 11400000, guid: d917ae0a316da5248a7b9f926bd500a9, type: 2}
   barraProgresso: {fileID: 1598877375}
   textoPorcentagem: {fileID: 829791890}
   personagensSetorCard:
@@ -14396,6 +14408,8 @@ MonoBehaviour:
   - {fileID: -3596379322837086861, guid: 916e04619b870d6449011978397e7998, type: 3}
   botaoUpgrade: {fileID: 901341349}
   textoBotao: {fileID: 1595703530}
+  dialogoConclusao: {fileID: 11400000, guid: e41bf62b8aa826144b493d07999adff3, type: 2}
+  dialogoFinalJogo: {fileID: 11400000, guid: d917ae0a316da5248a7b9f926bd500a9, type: 2}
   barraProgresso: {fileID: 1598877375}
   textoPorcentagem: {fileID: 829791890}
   personagensSetorCard:
