@@ -7,6 +7,9 @@ public class UIManager : MonoBehaviour
 
     [Header("Progresso do Jogo")]
     public TextMeshProUGUI textoNotaMEC;
+
+    [Header("Janela de Confirmação de Saída")]
+    public GameObject painelConfirmacaoSair;
     
     [Header("Textos dos Botões de RH")]
     public TextMeshProUGUI textoBotaoSeguranca;
@@ -81,5 +84,29 @@ public class UIManager : MonoBehaviour
             int podeComprarClique = (int)(gm.verba / gm.custoClique);
             textoBotaoClique.text = $"Upgrade de Clique (R$ {gm.custoClique})\nValor clique atual: {gm.verbaPorClique} | Pode comprar: {podeComprarClique}";
         }
+    }
+
+    // 1. Abre a janelinha de aviso
+    public void AbrirJanelaConfirmacao()
+    {
+        if (painelConfirmacaoSair != null)
+        {
+            painelConfirmacaoSair.SetActive(true);
+        }
+    }
+
+    // 2. Fecha a janelinha caso o usuário desista de sair
+    public void CancelarSaida()
+    {
+        if (painelConfirmacaoSair != null)
+        {
+            painelConfirmacaoSair.SetActive(false);
+        }
+    }
+
+    // 3. Se confirmar, manda o reitor de volta para o Menu Principal
+    public void ConfirmarSairParaOMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MenuScene");
     }
 }
